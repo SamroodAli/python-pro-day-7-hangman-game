@@ -2,18 +2,19 @@
 import hangman_art
 import hangman_words
 import random
-from os import system, name 
+from replit import clear
+# from os import system, name 
   
-# I did not write this code, copied from stack overflow,to clear the shell every new game.Keeping things clean ;)
-def clear(): 
+# # I did not write this code, copied from stack overflow,to clear the shell every new game.Keeping things clean ;)
+# def clear(): 
   
-    # for windows 
-    if name == 'nt': 
-        _ = system('cls') 
+#     # for windows 
+#     if name == 'nt': 
+#         _ = system('cls') 
   
-    # for mac and linux(here, os.name is 'posix') 
-    else: 
-        _ = system('clear') 
+#     # for mac and linux(here, os.name is 'posix') 
+#     else: 
+#         _ = system('clear') 
 
 playing = True
 while playing:
