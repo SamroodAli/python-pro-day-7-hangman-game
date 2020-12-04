@@ -4,8 +4,6 @@ import hangman_words
 import random
 from os import system, name 
   
-
-
 # I did not write this code, copied from stack overflow,to clear the shell every new game.Keeping things clean ;)
 def clear(): 
   
@@ -44,8 +42,6 @@ while playing:
     while not end_of_game:
         guess = input("Guess a letter: ").lower()
 
-        #If the user has entered a letter they've already guessed, print the letter and let them know.
-
         #Check guessed letter
         for position in range(word_length):
             letter = chosen_word[position]
@@ -61,6 +57,7 @@ while playing:
                 end_of_game = True
                 print(f"You lose. The word was {chosen_word}")
 
+        #If the user has entered a letter they've already guessed, print the letter and let them know.
         if guess in guessed_letters:
             print(f"You already guessed {guess}")
         else:
